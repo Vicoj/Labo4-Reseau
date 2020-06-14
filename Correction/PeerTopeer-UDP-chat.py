@@ -19,6 +19,7 @@ class Chat() :
         tokens = param.split(' ')
         if len(tokens)==2:
             self.__address=(socket.gethostbyaddr(tokens[0])[0],int(tokens[1]))
+            print('Server Joined')
 
     def _send(self,param):
         if self.__address is not None :
